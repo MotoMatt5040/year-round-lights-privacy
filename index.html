@@ -34,7 +34,7 @@
 <body>
 
 <h1>Year-Round Lights — Privacy Policy</h1>
-<p class="updated">Last updated: May 4, 2026</p>
+<p class="updated">Last updated: May 21, 2026</p>
 
 <p>
 This policy explains what data the Year-Round Lights mobile app
@@ -75,7 +75,8 @@ You can review Sentry's privacy practices at the link above.
 
 <p>
 To configure your lighting controller, the App stores the following information
-<strong>on your device only</strong>, encrypted using the Android Keystore:
+<strong>on your device only</strong>, encrypted using the device's secure storage
+(the iOS Keychain on iPhone and iPad, the Android Keystore on Android):
 </p>
 <ul>
   <li>The Wi-Fi network name (SSID) and password you provide during controller setup</li>
@@ -85,7 +86,7 @@ To configure your lighting controller, the App stores the following information
 
 <p>
 This information <strong>never leaves your device</strong> and is not transmitted to the
-developer, to Google, or to any third party. It is deleted when you uninstall the App.
+developer, to Apple or Google, or to any third party. It is deleted when you uninstall the App.
 </p>
 
 <h2>3. Permissions we request</h2>
@@ -123,6 +124,12 @@ developer, to Google, or to any third party. It is deleted when you uninstall th
           home Wi-Fi network name and password to that controller so it can join your Wi-Fi.
           The Wi-Fi credentials travel only between your phone and the controller you are
           setting up; they are never sent to the developer or to any third party.</td>
+    </tr>
+    <tr>
+      <td>Local Network — iOS</td>
+      <td>Required by iOS to discover and send commands to your lighting controller over your
+          home Wi-Fi after setup. The App communicates only with controllers on your local
+          network and does not scan, identify, or transmit information about other devices.</td>
     </tr>
     <tr>
       <td>Internet</td>
